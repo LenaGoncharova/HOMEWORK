@@ -14,7 +14,7 @@ void TherdNum(int number)
     {
         number = number / 10;
     }
-     Console.Write($" {cons}->{number % 10}");
+     Console.WriteLine($" {cons}->{number % 10}");
 }
 if (num > 99)
     TherdNum(num);
