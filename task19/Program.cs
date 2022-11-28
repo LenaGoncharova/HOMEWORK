@@ -7,16 +7,23 @@
 
 Console.Clear();
 Console.Write("Ввдетие пятизначное число:  ");
-int n = Math.Abs( Convert.ToInt32(Console.ReadLine()));
+int n = Math.Abs(Convert.ToInt32(Console.ReadLine()));
 
-bool Palindrome (int x)
+bool Palindrome(int x)
 {
-  int num1=x%10;
-  int num2=((x/10)%10); 
-  int num3= ((x/1000)%10); 
-  int num4=((x/10000)%10);
-  return num1==num4 && num2==num3;
+    int num1 = x % 10;
+    int num2 = (x / 10) % 10;
+    int num3 = (x / 1000) % 10;
+     int num4 = (x / 10000) % 10;
+    return num1 == num4 && num2 == num3;
 }
- bool res =Palindrome( n);
- Console.Write ($"{n}->");
-Console.WriteLine( res ?"Да":"Нет");
+if (n>=10000 && n<100000) 
+{
+
+ bool res = Palindrome(n);
+Console.WriteLine (res ? "Да" : "Нет");
+}
+else
+{
+  Console.WriteLine("это не пятизначное число!");
+}
