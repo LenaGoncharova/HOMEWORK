@@ -20,13 +20,15 @@ int PowerNumber(int num1, int num2)
         return res;
     }
 
-if (number2 > 0) 
-  int powerNumber = PowerNumber(number1, number2);  
- Console.WriteLine($"{number1} в степени {number2}  = {powerNumber}  ");   
-else
+if (number1 >= 0 && number2 > 0 ) 
 {
-    Console.WriteLine("вы ввели не натуральное число ") ;
+   int powerNumber = PowerNumber(number1, number2);  
+ Console.WriteLine($"{number1} в степени {number2}  = {powerNumber} ") ;   
 }
+else 
+    Console.WriteLine("вы ввели не натуральное число ");
+
+
    
  
 
