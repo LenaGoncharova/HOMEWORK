@@ -9,24 +9,20 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 
 int PowerNumber(int num1, int num2)
 {
-    if (number2 == 0) 
-    {
+    if (number2 == 0)
         return 0;
-    }
-    else
+  else
     {
         int res = Convert.ToInt32(Math.Pow(num1, num2));
         return res;
+  
     }
-int powerNumber = PowerNumber(number1, number2);
-if (number1 > 0 && number2 > 0 ) 
-  {  
- Console.WriteLine($"{number1} в степени {number2}  = {powerNumber} ") ;   
-  }
-else 
-   {
-     Console.Write("вы ввели не натуральное число");
-   };
+}  
+int powerNumber = PowerNumber(number1, number2); 
+if  (number2<0) Console.WriteLine( "Ввели не натуральную степень");
+else
+ Console.WriteLine($"{number1} в степени {number2} = {powerNumber}");   
+  
 
 
 
