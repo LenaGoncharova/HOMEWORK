@@ -10,7 +10,7 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 
 int PowerNumber(int num1, int num2)
 {
-    if (number2 == 0 )
+    if (number2 == 0) 
     {
         return 0;
     }
@@ -20,7 +20,20 @@ int PowerNumber(int num1, int num2)
         return res;
     }
 
+if (number2 > 0) 
+  int powerNumber = PowerNumber(number1, number2);  
+ Console.WriteLine($"{number1} в степени {number2}  = {powerNumber}  ");   
+else
+{
+    Console.WriteLine("вы ввели не натуральное число ") ;
 }
+   
+ 
 
-int powerNumber = PowerNumber(number1, number2);
-    Console.WriteLine( $"{number1} в степени { number2}  = {powerNumber}  ");
+
+
+
+
+
+ 
+    
