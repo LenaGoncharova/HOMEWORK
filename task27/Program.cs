@@ -23,7 +23,7 @@ int SumNumber(int num)
 }
 
 int sumNumber = SumNumber( number);
-Console.Write ($" сумма числа {number} = {sumNumber}");
+Console.Write ($" сумма  цифр числа {number} = {sumNumber}");
 
 
 
