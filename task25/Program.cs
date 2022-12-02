@@ -18,15 +18,10 @@ int PowerNumber(int num1, int num2)
         int res = Convert.ToInt32(Math.Pow(num1, num2));
         return res;
     }
+}  
 int powerNumber = PowerNumber(number1, number2);
-if (number1 > 0 && number2 > 0 ) 
-  {  
- Console.WriteLine($"{number1} в степени {number2}  = {powerNumber} ") ;   
-  }
-else 
-   {
-     Console.Write("вы ввели не натуральное число");
-   };
+ Console.WriteLine($"{number1} в степени {number2} = {powerNumber}");   
+
 
 
 
