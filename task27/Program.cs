@@ -5,7 +5,7 @@
 // 82 -> 10,  ,9012 -> 12
 Console.Clear();
 Console.Write("Введите первое число:   ");
-int number = Convert.ToInt32(Console.ReadLine());
+
 
 int SumNumber(int num)
 {
@@ -22,8 +22,11 @@ int SumNumber(int num)
      return sum; 
 }
 
-int sumNumber = SumNumber( number);
-Console.Write ($" сумма  цифр числа {number} = {sumNumber}");
+
+Console.WriteLine($"сумма цифр в числе  = {SumNumber(int.Parse(Console.ReadLine()))}");
+// int sumNumber = SumNumber( number);
+// Console.Write ($" сумма  цифр числа {number} = {sumNumber}");
+
 
 
 
