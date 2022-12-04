@@ -4,7 +4,7 @@
 
 // 82 -> 10,  ,9012 -> 12
 Console.Clear();
-Console.Write("Введите первое число:   ");
+Console.Write("Введите первое число: ");
 
 
 int SumNumber(int num)
