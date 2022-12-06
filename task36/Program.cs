@@ -30,7 +30,7 @@ void NewArray(int[] arr)
  int SumElements(int[] arr)
  {
      int sum=arr[1];
-     for (int i = 2; i <arr. Length; i++)
+     for (int i = 3; i <arr. Length; i++)
      {
         if(i%2==1 ) sum=sum+arr[i];
      }
