@@ -35,14 +35,11 @@ double DifferenceNumbers(double[] arr)
         if (arr[i] > max) max = arr[i];
         if (arr[i] < min) min = arr[i];
     }
-
-    {
-
-     return max -min;
-   }
+     return max - min;
+   
 } 
 
-double[] createArrayRndDouble = CreateArrayRndDouble(5, 0, 80
+double[] createArrayRndDouble = CreateArrayRndDouble(5, -7, 80
 );
 PrintArray(createArrayRndDouble);
 
