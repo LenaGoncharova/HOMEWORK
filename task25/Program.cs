@@ -10,7 +10,7 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 int PowerNumber(int num1, int num2)
 {
     if (number2 == 0)
-        return 0;
+        return 1;
   else
     {
         int res = Convert.ToInt32(Math.Pow(num1, num2));
@@ -30,7 +30,7 @@ Console.WriteLine($"{number1} в степени {number2} = {powerNumber}");
 int PowerNumber1(int num1, int num2)
 {
    if (num2 == 0)
-        return 0;
+        return 1;
      int res= num1;
      for (int i = 2; i <num2 ; i++)
      {
