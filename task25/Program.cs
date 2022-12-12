@@ -27,6 +27,18 @@ Console.WriteLine($"{number1} в степени {number2} = {powerNumber}");
 
 
  
+int PowerNumber1(int num1, int num2)
+{
+   if (num2 == 0)
+        return 0;
+     int res= num1;
+     for (int i = 2; i <num2 ; i++)
+     {
+        res *=num1;
+     }
+     return res;
+} 
+Console.WriteLine($"{number1} в степени {number2} = {powerNumber}");  
 
 
 
