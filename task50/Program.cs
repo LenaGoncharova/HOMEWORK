@@ -47,9 +47,9 @@ bool SearchForIndexes(int[,]arr, int inx1,int inx2)
          if( i+1==inx1&& j+1==inx2 || inx1==0 || inx2==0) return true;
   
         }
-
+    
     }
-   return false;
+  return false;
 }
 
 int[,]matrixArray=MatrixArray( 3,4, 0,40); 
