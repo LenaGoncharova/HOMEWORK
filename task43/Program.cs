@@ -1,5 +1,5 @@
-﻿// k1*x+b1=k2*x+b2
-// k1*x-(k2*x)=b2-b1
+﻿// / k1*x+b1=k2*x+b2
+//  k1*x-(k2*x)=b2-b1
 // x(k1-k2)=b2-b1
 // x=(b2-b1)/(k1-k2)
 //   Напишите программу, которая найдёт точку пересечения двух прямых,
@@ -10,54 +10,62 @@
 
 
 // y = k1 * x + b1, y = k2 * x + b2;
- Console.Clear();
-// Console.WriteLine("введите значение b1");
-// double b1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("введите число k1");
-// double k1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("введите значение b2");
-// double b2 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("введите число k2");
-// double k2 = Convert.ToInt32(Console.ReadLine());
-// // if(k1>k2&&k1>k2)
-// {
-// double x = (-b2 + b1)/(-k1 + k2);
-// double y = k2 * x + b2;
-// Console.WriteLine($"две прямые пересекутся в точке с координатами X: {x}, Y: {y}");
-
+//  9
 // }
 // else 
 // Console.WriteLine(" прямые не пересекутся ");
 
 
-// using System;
-// using static System.Console;
 
 
 
- double IntersectionPoint( int b1,int b2,int k1,int k2)
- {
-   double x= (-b2 + b1)/(-k1 + k2); 
-    double y= k2 * x + b2;
-   return x;  
-   returny; 
-  
-   
- }
 
- Console.WriteLine("введите значение b1");
+double[] IntersectionPoint(int b1, int b2, int k1, int k2)
+{
+    double[] arr = new double[] { 0, 0 };
+    double x = (-b2 + b1) / (-k1 + k2);
+    double y = k2 * x + b2;
+    for (int i = 0; i <arr.Length ; i++)
+    {
+        arr[0] = x;
+        arr[1] = y;
+    }
+
+    return arr;
+
+}
+
+void PrintArray(double[] arr)
+{
+    Console.Write("[");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}; ");
+        else Console.Write($"{arr[i]} ");
+    }
+    Console.Write("]");
+}
+Console.WriteLine("введите значение b1");
 int b1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите число k1");
+Console.WriteLine("введите число b2");
+int b2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("введите значение k1 ");
 int k1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("введите значение b2");
- int b2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите число k2");
 int k2 = Convert.ToInt32(Console.ReadLine());
 
 
-double intersectionPoint=IntersectionPoint( b1,b2, k1, k2);
-Console.WriteLine();
-Console.WriteLine(intersectionPoint);
+double[] intersectionPoint = IntersectionPoint(b1, b2, k1, k2);
+if (k1 == k2)
+{
+    Console.Write(" прямые не пересекутся!");
+}
+
+else
+   Console.Write($"координаты пересечения двух прямых => ");
+PrintArray(intersectionPoint);
+
+
 // Console.Write("Введите  координаты точки Bx: ");
 // int x2 = int.Parse(Console.ReadLine());
 // Console.Write("Введите  координаты точки By: ");
@@ -78,6 +86,6 @@ Console.WriteLine(intersectionPoint);
 
 
 
-// double res = Math.Sqrt(a * b);
-// double res1 = Math.Round(res, 2, MidpointRounding.ToZero);
-// Console.WriteLine(res1);
+// // double res = Math.Sqrt(a * b);
+// // double res1 = Math.Round(res, 2, MidpointRounding.ToZero);
+// // Console.WriteLine(res1);
