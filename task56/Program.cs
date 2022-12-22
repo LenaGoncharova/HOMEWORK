@@ -99,8 +99,9 @@ int RowsMinSum( int[]arr)
 
 int[,] createarr = CreateMatrix(4, 4, 0, 5);
 PrintMatrix(createarr);
+Console.WriteLine();
 int[]sumofrows=SumOfRows(createarr) ;
 PrintArray( sumofrows);
 Console.WriteLine();
 int numrows= RowsMinSum(sumofrows );
-Console.WriteLine($"строка с наименьшей суммой элементов => { numrows} ");
+Console.Write($"строка с наименьшей суммой элементов => { numrows} ");
