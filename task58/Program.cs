@@ -44,7 +44,7 @@ void PrintMatrix(int[,] matrix)
         Console.Write("|");
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (j > matrix.GetLength(1) - 1) Console.Write($" {matrix[i, j] },");
+            if (j< matrix.GetLength(1) - 1) Console.Write($" {matrix[i, j] },");
            else Console.Write($" {matrix[i, j]}"); 
     
    
@@ -59,7 +59,7 @@ void PrintMatrix(int[,] matrix)
 int[,]MultiplicationMatrix( int[,]arr1, int[,]arr2)
 {
    int[,]matrix3= new int[ arr1.GetLength(0), arr2.GetLength(1)];
-      if (arr1.GetLength(1) == arr2.GetLength(0));
+      if (arr1.GetLength(1) == arr2.GetLength(0))
    for (int i = 0; i <matrix3.GetLength(0); i++)
    {
      for (int j = 0; j <matrix3.GetLength( 1 ); j++)
