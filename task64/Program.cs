@@ -6,22 +6,23 @@
 
 Console.Clear();
 
-Console.Write( "Введите число N: ");
-int n= Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите число N: ");
+int n = Convert.ToInt32(Console.ReadLine());
 
-void NaturalNumber( int number)
+void NaturalNumber(int number)
 {
- if ( number<=0) return ;
- if (number>1)
- {Console.Write($"  {number}," );
-    NaturalNumber(  number-1);
-}
-  else 
-  {
-    Console.Write($"  {number}." );
-  }
+    if (number <= 0) return;
+    if (number > 1)
+    {
+        Console.Write($"  {number},");
+        NaturalNumber(number - 1);
+    }
+    else
+    {
+        Console.Write($"  {number}.");
+    }
 
 
 }
 
-NaturalNumber( n);
+NaturalNumber(n);
