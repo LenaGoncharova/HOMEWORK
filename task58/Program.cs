@@ -65,6 +65,7 @@ int[,]MultiplicationMatrix( int[,]arr1, int[,]arr2)
      for (int j = 0; j <matrix3.GetLength( 1 ); j++)
      {
          matrix3[i,j]=0;
+         
          {
              for (int k = 0; k <arr1.GetLength(1) ; k++)
              {
